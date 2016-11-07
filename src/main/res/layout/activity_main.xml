@@ -12,8 +12,8 @@
         android:paddingTop="@dimen/activity_vertical_margin">
 
         <TextView
-            android:layout_width="wrap_content"
             android:id="@+id/vs"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:text="Team A vs Team B"
@@ -22,9 +22,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_below="@id/vs"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
             android:text="Scoreboard"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -332,46 +332,45 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
                     android:hint="Balls"
                     android:inputType="number"
                     android:paddingBottom="5dp"
-                    android:layout_marginBottom="25dp"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
             </LinearLayout>
         </LinearLayout>
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/summary"
-            android:text="Summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="false"
             android:onClick="intent"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="false"/>
+            android:text="Summary"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CurrentOver"
             android:id="@+id/current_over"
-            android:onClick="intent2"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_toRightOf="@id/summary"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="false"/>
-
-        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PlayerStats"
-            android:id="@+id/player_stats"
-            android:onClick="intent3"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_toRightOf="@id/current_over"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="false"/>
+            android:layout_centerHorizontal="false"
+            android:layout_toRightOf="@id/summary"
+            android:onClick="intent2"
+            android:text="CurrentOver"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
+        <Button
+            android:id="@+id/player_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="false"
+            android:layout_toRightOf="@id/current_over"
+            android:onClick="intent3"
+            android:text="PlayerStats"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
     </RelativeLayout>
 </ScrollView>

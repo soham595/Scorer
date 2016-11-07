@@ -29,6 +29,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Player 3" />
-    </LinearLayout>
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Player 3" />
+    </LinearLayout>
 </ScrollView>
